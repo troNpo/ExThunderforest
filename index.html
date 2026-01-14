@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ExThunderforest – Acceso</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #e9e4d8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #4a6fa5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>ThunderTron</h2>
+    <p>Introduce tu API Key</p>
+    <input id="apikey" type="text" placeholder="Tu API key">
+    <button onclick="saveKey()">Entrar</button>
+  </div>
+
+  <script>
+    function saveKey() {
+      const key = document.getElementById('apikey').value.trim();
+      if (!key) return alert("Introduce una API key válida");
+      localStorage.setItem("TF_API_KEY", key);
+      window.location.href = "visor.html";
+    }
+  </script>
+</body>
+</html>
