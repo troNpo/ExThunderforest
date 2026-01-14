@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ThunderTron – Visor</title>
+
+  <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; }
+    #map { width: 100%; height: 100%; }
+
+    #search-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      background: white;
+      padding: 8px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+      display: flex;
+      gap: 6px;
+    }
+    #search-box input {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #search-box button {
+      padding: 6px 10px;
+      background: #4a6fa5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="search-box">
+    <input id="search" type="text" placeholder="Buscar ubicación...">
+    <button onclick="searchLocation()">Ir</button>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="visor.js"></script>
+</body>
+</html>
