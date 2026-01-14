@@ -7,7 +7,7 @@ if (!apiKey) {
 
 const map = new maplibregl.Map({
   container: 'map',
-  style: 'atlas.json',
+  style: 'thundertron.json',
   center: [-3.7, 40.4],
   zoom: 5,
   transformRequest: (url) => {
