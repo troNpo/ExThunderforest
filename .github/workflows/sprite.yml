@@ -13,11 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate sprite with npx
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install @maplibre/spritezero-cli
+
+      - name: Generate sprite
         run: |
           mkdir -p sprites
-          npx @mapbox/spritezero-cli sprites/sprite icons
-          npx @mapbox/spritezero-cli --retina sprites/sprite@2x icons
+          npx spritezero sprites/sprite icons
+          npx spritezero --retina sprites/sprite@2x icons
 
       - name: Commit sprite files
         run: |
