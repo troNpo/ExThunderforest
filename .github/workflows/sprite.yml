@@ -1,0 +1,32 @@
+name: Generate Sprite
+
+on:
+  push:
+    paths:
+      - "icons/*.svg"
+
+jobs:
+  build-sprite:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install spritezero
+        run: |
+          npm install -g @mapbox/spritezero-cli
+
+      - name: Generate sprite
+        run: |
+          mkdir -p sprites
+          spritezero sprites/sprite icons
+          spritezero --retina sprites/sprite@2x icons
+
+      - name: Commit sprite files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sprites/
+          git commit -m "Update sprite" || echo "No changes to commit"
+          git push
