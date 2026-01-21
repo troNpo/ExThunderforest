@@ -13,15 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install spritezero
-        run: |
-          npm install -g @mapbox/spritezero-cli
-
-      - name: Generate sprite
+      - name: Generate sprite with npx
         run: |
           mkdir -p sprites
-          spritezero sprites/sprite icons
-          spritezero --retina sprites/sprite@2x icons
+          npx @mapbox/spritezero-cli sprites/sprite icons
+          npx @mapbox/spritezero-cli --retina sprites/sprite@2x icons
 
       - name: Commit sprite files
         run: |
