@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Leyenda EXThunderforest</title>
+<style>
+  body {
+    background:#121212;
+    color:#ffffff;
+    font-family:-apple-system, system-ui, sans-serif;
+    margin:0;
+    padding:20px;
+    box-sizing:border-box;
+  }
+  .legend {
+    background:#1e1e1e;
+    padding:20px;
+    border-radius:8px;
+    border:1px solid #333;
+    max-width:960px;
+    margin:0 auto;
+    box-sizing:border-box;
+  }
+  .legend-title {
+    font-size:24px;
+    font-weight:bold;
+    color:#00eaff;
+    margin-bottom:20px;
+  }
+  .section-title {
+    font-size:20px;
+    font-weight:bold;
+    margin-top:24px;
+    margin-bottom:8px;
+    padding-bottom:6px;
+    border-bottom:1px solid #444;
+  }
+  .item {
+    display:flex;
+    align-items:center;
+    margin:4px 0;
+    font-size:14px;
+  }
+  .color-box {
+    width:40px;
+    height:14px;
+    border-radius:3px;
+    margin-right:8px;
+    border:1px solid #444;
+  }
+  .color-line {
+    width:40px;
+    height:0;
+    margin-right:8px;
+    border-bottom-width:3px;
+    border-bottom-style:solid;
+  }
+</style>
+</head>
+<body>
+
+<div class="legend">
+  <div class="legend-title">Leyenda EXThunderforest</div>
+
+  <!-- ÁREAS (Landcover) -->
+  <div class="section-title">Áreas (Landcover)</div>
+
+  <div class="item"><span class="color-box" style="background:#c9d498;"></span>Bosque</div>
+  <div class="item"><span class="color-box" style="background:#d1daa8;"></span>Matorral</div>
+  <div class="item"><span class="color-box" style="background:#e4e4b4;"></span>Praderas</div>
+  <div class="item"><span class="color-box" style="background:#e4e4b4;"></span>Cultivos</div>
+  <div class="item"><span class="color-box" style="background:#fff1ba;"></span>Arena / Playa</div>
+  <div class="item"><span class="color-box" style="background:#d6d2ce;"></span>Roca</div>
+
+  <!-- ÁREAS (Landuse) -->
+  <div class="section-title">Áreas (Landuse)</div>
+
+  <div class="item"><span class="color-box" style="background:#e8e3d8;"></span>Residencial / Comercial</div>
+  <div class="item"><span class="color-box" style="background:#d8d2c8;"></span>Industrial / Construcción</div>
+  <div class="item"><span class="color-box" style="background:#e4e4b4;"></span>Cementerio / Recreación</div>
+  <div class="item"><span class="color-box" style="background:#e0d4d4;"></span>Área militar</div>
+
+  <!-- ÁREAS ESPECIALES -->
+  <div class="section-title">Áreas especiales</div>
+
+  <div class="item"><span class="color-box" style="background:rgba(106,161,39,0.16);"></span>Áreas protegidas</div>
+  <div class="item"><span class="color-box" style="background:#f2d6d6;"></span>Hospital</div>
+  <div class="item"><span class="color-box" style="background:#e8e3d8;"></span>Escuela / Universidad</div>
+  <div class="item"><span class="color-box" style="background:#e4e4b4;"></span>Estadio</div>
+  <div class="item"><span class="color-box" style="background:#d1daa8;"></span>Zoo / Camping</div>
+
+  <!-- AGUA -->
+  <div class="section-title">Agua</div>
+
+  <div class="item"><span class="color-box" style="background:#bcd7e6;"></span>Océano / Lagos</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#9bb8c6;"></span>Ríos principales</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#9bb8c6;"></span>Ríos menores</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:rgba(155,184,198,0.45); border-bottom-style:dashed;"></span>Ríos intermitentes</div>
+  <div class="item"><span class="color-box" style="background:#d1daa8;"></span>Humedales</div>
+
+  <!-- CICLOVÍAS -->
+  <div class="section-title">Ciclovías</div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#d62828;"></span>
+    ICN – Ruta Internacional
+  </div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#7b2cbf;"></span>
+    NCN – Ruta Nacional
+  </div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#9d4edd;"></span>
+    RCN – Ruta Regional
+  </div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#3bc9db; border-bottom-style:dashed;"></span>
+    LCN – Ruta Local
+  </div>
+
+  <!-- CARRETERAS -->
+  <div class="section-title">Carreteras</div>
+
+  <div class="item"><span class="color-line" style="border-bottom-color:#D96A4E;"></span>Autopista / Motorway</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#E3A857;"></span>Carretera primaria</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#E6B86A;"></span>Carretera secundaria</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#EAD08A;"></span>Carretera terciaria</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#FFFFFF;"></span>Residencial</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#F7F3ED;"></span>Service / Parking</div>
+
+  <!-- CAMINOS Y SENDEROS -->
+  <div class="section-title">Caminos y senderos</div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#BEB7B0;"></span>
+    Track
+  </div>
+
+  <div class="item">
+    <span class="color-line" style="border-bottom-color:#C8C3BE; border-bottom-style:dashed;"></span>
+    Sendero / Path / Footway
+  </div>
+
+  <!-- FERROCARRIL -->
+  <div class="section-title">Ferrocarril</div>
+
+  <div class="item"><span class="color-line" style="border-bottom-color:#bfbfbf;"></span>Línea de tren</div>
+
+  <!-- FRONTERAS -->
+  <div class="section-title">Fronteras</div>
+
+  <div class="item"><span class="color-line" style="border-bottom-color:#8a9992;"></span>Frontera internacional</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:#939393; border-bottom-style:dashed;"></span>Frontera disputada</div>
+
+  <!-- OTROS -->
+  <div class="section-title">Otros</div>
+
+  <div class="item"><span class="color-line" style="border-bottom-color:#75BBE5; border-bottom-style:dashed;"></span>Ferry</div>
+  <div class="item"><span class="color-box" style="background:rgba(246,190,194,0.35);"></span>Zonas de peligro (área)</div>
+  <div class="item"><span class="color-line" style="border-bottom-color:rgba(246,190,194,1);"></span>Zonas de peligro (borde)</div>
+  <div class="item"><span class="color-box" style="background:#e8e3d8;"></span>Aeródromo / Aeropuerto</div>
+  <div class="item"><span class="color-box" style="background:#bfbfbf;"></span>Pistas y helipuertos</div>
+
+</div>
+
+</body>
+</html>
