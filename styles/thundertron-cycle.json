@@ -3806,6 +3806,36 @@
         "text-halo-color": "#d62828"
       }
     },
+	  {
+  "id": "icn-textshield",
+  "type": "symbol",
+  "source": "outdoors",
+  "source-layer": "cycling",
+  "minzoom": 13,
+  "maxzoom": 24,
+  "filter": [
+    "all",
+    ["==", ["get", "icn"], "yes"],
+    ["has", "icn_ref"]
+  ],
+  "layout": {
+    "visibility": "visible",
+    "text-field": "{icn_ref}",
+    "text-font": ["NotoSans_Regular"],
+    "text-size": 12,
+    "text-keep-upright": true,
+    "symbol-placement": "line",
+    "symbol-spacing": 1000,
+    "text-max-angle": 25,
+    "text-justify": "center",
+    "text-allow-overlap": true
+  },
+  "paint": {
+    "text-color": "#ffffff",
+    "text-halo-color": "#d62828",
+    "text-halo-width": 4
+  }
+},
 {
   "id": "label-place-low",
   "type": "symbol",
