@@ -4,7 +4,7 @@
   "sources": {
     "outdoors": {
       "type": "vector",
-      "url": "https://tile.thunderforest.com/thunderforest.outdoors-v2.json?apikey=bc1102ad73c64b71a8b8df33cea403f4",
+      "url": "https://tile.thunderforest.com/thunderforest.outdoors-v2.json?apikey={{API_KEY}}",
       "attribution": "<a href=\"https://www.thunderforest.com/\" target=\"_blank\">&copy; Thunderforest</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>"
     }
   },
